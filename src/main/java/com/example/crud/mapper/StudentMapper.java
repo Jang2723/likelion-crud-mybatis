@@ -4,6 +4,7 @@ import com.example.crud.model.StudentDto;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @Mapper
 public interface StudentMapper {
@@ -23,6 +24,7 @@ public interface StudentMapper {
     // Select 하나
     @Select("SELECT * FROM student WHERE id = #{id};")
     StudentDto selectStudent(Long id);
+//    Optional<StudentDto> selectStudent(Long id);
 
     @Update("UPDATE student SET " +
             "name = #{name}, " +

@@ -45,5 +45,9 @@ public class StudentDao {
         }
     }
 
+    // todo studentMapper를 사용해 update 하는 메서드
+
+    // todo StudentMapper를 사용해 delete 하는 메서드
+
 
 }
